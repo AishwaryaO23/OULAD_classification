@@ -1,0 +1,56 @@
+### RANDOM FOREST ###
+
+recall mean score on train set: 0.693182107808987
+recall score on test set: 0.6925779851288238
+Training time: 16.158339023590088 seconds
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.74      0.72      0.73      2516
+           1       0.50      0.46      0.48      1821
+           2       0.85      0.90      0.87      3800
+
+    accuracy                           0.74      8137
+   macro avg       0.70      0.69      0.69      8137
+weighted avg       0.74      0.74      0.74      8137
+
+
+### SVM ###
+
+recall mean score on train set: 0.6909097618798911
+recall score on test set: 0.6847651262638691
+Training time: 84.39419198036194 seconds
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.76      0.70      0.73      2516
+           1       0.48      0.48      0.48      1821
+           2       0.83      0.88      0.85      3800
+
+    accuracy                           0.73      8137
+   macro avg       0.69      0.68      0.69      8137
+weighted avg       0.73      0.73      0.73      8137
+
+
+### MLP ###
+
+recall score on test set: 0.6564444012360987
+Training time: 19.260113954544067 seconds
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.73      0.76      0.74      2516
+           1       0.56      0.24      0.34      1821
+           2       0.78      0.97      0.86      3800
+
+    accuracy                           0.74      8137
+   macro avg       0.69      0.66      0.65      8137
+weighted avg       0.71      0.74      0.71      8137
+
+
+### SVM hypertuning ###
+
+Best params after hypertuning SVM {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+Train score on best params 0.6927722192723808
+Test score on best params 0.6883854068185219
+
